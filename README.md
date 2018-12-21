@@ -54,25 +54,25 @@ $ flatpak install "flathub" "org.gnome.Platform//3.30"
 ### Build
 
 ```
-$ flatpak-builder "build" "io.sourceforge.RedNotebook.yaml" --force-clean --install-deps-from="flathub"
+$ flatpak-builder "build" "app.rednotebook.RedNotebook.yaml" --force-clean --install-deps-from="flathub"
 ```
 
 ### Test
 
 ```
-$ flatpak-builder --run "build" "io.sourceforge.RedNotebook.yaml" "sh"
+$ flatpak-builder --run "build" "app.rednotebook.RedNotebook.yaml" "sh"
 ```
 
 ### Test run
 
 ```
-$ flatpak-builder --run "build" "io.sourceforge.RedNotebook.yaml" "rednotebook"
+$ flatpak-builder --run "build" "app.rednotebook.RedNotebook.yaml" "rednotebook"
 ```
 
 ### Install
 
 ```
-$ flatpak-builder --repo="repo" --force-clean "build" "io.sourceforge.RedNotebook.yaml"
+$ flatpak-builder --repo="repo" --force-clean "build" "app.rednotebook.RedNotebook.yaml"
 ```
 
 ```
@@ -80,19 +80,19 @@ $ flatpak --user remote-add --no-gpg-verify "rednotebook" "repo"
 ```
 
 ```
-$ flatpak --user install "rednotebook" "io.sourceforge.RedNotebook"
+$ flatpak --user install "rednotebook" "app.rednotebook.RedNotebook"
 ```
 
 ### Run
 
 ```
-$ flatpak run "io.sourceforge.RedNotebook"
+$ flatpak run "app.rednotebook.RedNotebook"
 ```
 
 ### Uninstall
 
 ```
-$ flatpak --user uninstall "io.sourceforge.RedNotebook"
+$ flatpak --user uninstall "app.rednotebook.RedNotebook"
 ```
 
 ```
