@@ -103,7 +103,7 @@ See also: [Building your first Flatpak](http://docs.flatpak.org/en/latest/first-
 
 ## FAQ
 
-### Why not use an RPM package?
+### Why not a RPM package?
 
 There are already [packages](https://pkgs.org/download/rednotebook) for various distributions. However, they may be outdated.
 
